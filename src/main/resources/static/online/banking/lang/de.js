@@ -13,6 +13,7 @@ var langDe = {
     "topbar-contact": "info@camunda.com",
     "topbar-list": "Seiten",
     "topbar-about": "Über Uns",
+    "topbar-dispute": "Zahlungsreklamationsformular",
     "topbar-account": "Konten",
     "topbar-document": "Dokument einreichen",
     "topbar-contact": "Kontakt",

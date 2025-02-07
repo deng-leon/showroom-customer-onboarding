@@ -17,9 +17,11 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../css/stuff/demo.css">
+
 </head>
 
 <body>
+
     <!-- Preloader -->
     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="lds-ellipsis">
@@ -102,262 +104,74 @@
     </header>
     <!-- ##### Header Area End ##### -->
 
-    <!-- ##### Hero Area Start ##### -->
-    <div class="hero-area">
-        <div class="hero-slideshow owl-carousel">
-
-            <!-- Single Slide -->
-            <div class="single-slide bg-img">
-                <!-- Background Image-->
-                <div class="slide-bg-img bg-img bg-overlay" style="background-image: url(img/bg-img/1.jpg);"></div>
-                <!-- Welcome Text -->
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center justify-content-center">
-                        <div class="col-12 col-lg-9">
-                            <div class="welcome-text text-center">
-                                <h6 data-animation="fadeInUp" data-delay="100ms" data-i18n="hero-welcome-direct"></h6>
-                                <h2 data-animation="fadeInUp" data-delay="300ms" data-i18n="hero-welcome-now">'</h2>
-                                <h2 data-animation="fadeInUp" data-delay="300ms" ><span data-i18n="hero-welcome-account"></span></h2>
-                                <h2 data-animation="fadeInUp" data-delay="300ms" data-i18n="hero-welcome-fit"></h2>
-                                <a href="services.html" class="btn credit-btn mt-50 langlink" data-animation="fadeInUp" data-delay="700ms" data-i18n="hero-welcome-discover"></a>
-                            </div>
-                        </div>
+    <!-- ##### Breadcrumb Area Start ##### -->
+    <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/13.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content">
+                        <h2>Services</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Dispute Form</li>
+                            </ol>
+                        </nav>
                     </div>
                 </div>
-                <!-- Slide Duration Indicator -->
-                <div class="slide-du-indicator"></div>
             </div>
+        </div>
+    </section>
+    <!-- ##### Breadcrumb Area End ##### -->
 
-            <!-- Single Slide -->
-            <div class="single-slide bg-img">
-                <!-- Background Image-->
-                <div class="slide-bg-img bg-img bg-overlay" style="background-image: url(img/bg-img/5.jpg);"></div>
-                <!-- Welcome Text -->
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center justify-content-center">
-                        <div class="col-12 col-lg-9">
-                            <div class="welcome-text text-center">
-                                <h6 data-animation="fadeInUp" data-delay="100ms" data-i18n="hero-welcome-interest"></h6>
-                                <h2 data-animation="fadeInUp" data-delay="300ms" data-i18n="hero-welcome-get"></h2>
-                                <h2 data-animation="fadeInUp" data-delay="300ms" ><span data-i18n="hero-welcome-mortgage"></span></h2>
-                                <h2 data-animation="fadeInUp" data-delay="300ms" data-i18n="hero-welcome-fit"></h2>
-                                <a href="services.html" class="btn credit-btn mt-50 langlink" data-animation="fadeInDown" data-delay="700ms" data-i18n="hero-welcome-discover"></a>
-                            </div>
-                        </div>
-                    </div>
+<!-- ##### Fraud Report Form Area Start ###### -->
+<section id="fraudReportArea" class="section-padding-100-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Section Heading -->
+                <div class="section-heading text-center">
+                    <h2>Report Transaction Dispute</h2>
+                    <p>Please fill out the form below to report any suspicious transactions on your account.</p>
                 </div>
-                <!-- Slide Duration Indicator -->
-                <div class="slide-du-indicator"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12" style="margin: auto;">
+                <div id="fraudReportForm">
+                    <form method="post" class="reply">
+                        <fieldset>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <label for="accountNumber">Account Number: *</label>
+                                    <input class="form-control" id="accountNumber" name="accountNumber" type="text" required>
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="transactionId">Transaction ID: *</label>
+                                    <input class="form-control" id="transactionId" name="transactionId" type="text" required>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top:2em;">
+                                <div class="col-lg-12">
+                                    <label for="reportDetails">Details of Suspicious Activity: *</label>
+                                    <textarea class="form-control" id="reportDetails" name="reportDetails" rows="4" required></textarea>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <button id="triggerStartDispute" class="btn btn-normal btn-color submit" style="background-color:#003679;color:white;margin-top:1.5em;" type="button" data-i18n="form-send"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div id="space" style="height: 100px;"></div>
             </div>
         </div>
     </div>
-    <!-- ##### Hero Area End ##### -->
-
-    <!-- ##### Features Area Start ###### -->
-    <section class="features-area section-padding-100-0">
-        <div class="container">
-            <div class="row align-items-end">
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-features-area mb-100 wow fadeInUp" data-wow-delay="100ms">
-                        <!-- Section Heading -->
-                        <div class="section-heading">
-                            <div class="line"></div>
-                            <p data-i18n="service-area-inform"></p>
-                            <h2 data-i18n="service-area-account"></h2>
-                        </div>
-                        <h6>In vitae nisi aliquam, scelerisque leo a, volutpat sem. Viva mus rutrum dui fermentum eros hendrerit.</h6>
-                        <a href="services.html" class="btn credit-btn mt-50 langlink" data-i18n="hero-welcome-discover"></a>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-features-area mb-100 wow fadeInUp" data-wow-delay="300ms">
-                        <img src="img/bg-img/2.jpg" alt="">
-                        <h5 data-i18n="features-care"></h5>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-features-area mb-100 wow fadeInUp" data-wow-delay="500ms">
-                        <img src="img/bg-img/3.jpg" alt="">
-                        <h5 data-i18n="features-docs"></h5>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-features-area mb-100 wow fadeInUp" data-wow-delay="700ms">
-                        <img src="img/bg-img/4.jpg" alt="">
-                        <h5 data-i18n="features-easy"></h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ##### Features Area End ###### -->
-
-    <!-- ##### Call To Action Start ###### -->
-    <section class="cta-area d-flex flex-wrap">
-        <!-- Cta Thumbnail -->
-        <div class="cta-thumbnail bg-img jarallax" style="background-image: url(img/bg-img/5.jpg);"></div>
-
-        <!-- Cta Content -->
-        <div class="cta-content">
-            <!-- Section Heading -->
-            <div class="section-heading white">
-                <div class="line"></div>
-                <p data-i18n="cta-adone"></p>
-                <h2 data-i18n="cta-adtwo"></h2>
-            </div>
-            <h6>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis egestas sem. Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sod ales. Maecenas sed magna tempor, efficitur maur is in, sollicitudin augue. Praesent pretium finibus quam.</h6>
-            <div class="d-flex flex-wrap mt-50">
-                <!-- Single Skills Area -->
-                <div class="single-skils-area mb-70 mr-5">
-                    <div id="circle" class="circle" data-value="0.90">
-                        <div class="skills-text">
-                            <span>90%</span>
-                        </div>
-                    </div>
-                    <p>Energy</p>
-                </div>
-
-                <!-- Single Skills Area -->
-                <div class="single-skils-area mb-70 mr-5">
-                    <div id="circle2" class="circle" data-value="0.75">
-                        <div class="skills-text">
-                            <span>75%</span>
-                        </div>
-                    </div>
-                    <p>Power</p>
-                </div>
-
-                <!-- Single Skills Area -->
-                <div class="single-skils-area mb-70">
-                    <div id="circle3" class="circle" data-value="0.97">
-                        <div class="skills-text">
-                            <span>97%</span>
-                        </div>
-                    </div>
-                    <p>Resource</p>
-                </div>
-            </div>
-            <a href="#" class="btn credit-btn box-shadow btn-2" data-i18n="any-readmore"></a>
-        </div>
-    </section>
-    <!-- ##### Call To Action End ###### -->
-
-    <!-- ##### Call To Action Start ###### -->
-    <section class="cta-2-area wow fadeInUp" data-wow-delay="100ms">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Cta Content -->
-                    <div class="cta-content d-flex flex-wrap align-items-center justify-content-between">
-                        <div class="cta-text">
-                            <h4 data-i18n="cta-need">Are you in need for a load? Get in touch with us.</h4>
-                        </div>
-                        <div class="cta-btn">
-                            <a href="#" class="btn credit-btn box-shadow" data-i18n="any-readmore"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ##### Call To Action End ###### -->
-
-    <!-- ##### Services Area Start ###### -->
-    <section class="services-area section-padding-100-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Section Heading -->
-                    <div class="section-heading text-center mb-100 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="line"></div>
-                        <p data-i18n="service-area-inform"></p>
-                        <h2 data-i18n="service-area-account"></h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- Single Service Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="200ms">
-                        <div class="icon">
-                            <i class="icon-profits"></i>
-                        </div>
-                        <div class="text">
-                            <h5 data-i18n="services-all"></h5>
-                            <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis egestas sem.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Service Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="300ms">
-                        <div class="icon">
-                            <i class="icon-money-1"></i>
-                        </div>
-                        <div class="text">
-                            <h5 data-i18n="services-easy">Easy and fast answer</h5>
-                            <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis egestas sem.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Service Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="400ms">
-                        <div class="icon">
-                            <i class="icon-coin"></i>
-                        </div>
-                        <div class="text">
-                            <h5 data-i18n="services-add">No additional papers</h5>
-                            <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis egestas sem.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Service Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="500ms">
-                        <div class="icon">
-                            <i class="icon-smartphone-1"></i>
-                        </div>
-                        <div class="text">
-                            <h5 data-i18n="services-sec">Secure financial services</h5>
-                            <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis egestas sem.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Service Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="600ms">
-                        <div class="icon">
-                            <i class="icon-diamond"></i>
-                        </div>
-                        <div class="text">
-                            <h5 data-i18n="services-inv">Good investments</h5>
-                            <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis egestas sem.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Service Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="700ms">
-                        <div class="icon">
-                            <i class="icon-piggy-bank"></i>
-                        </div>
-                        <div class="text">
-                            <h5 data-i18n="services-accum">Accumulation goals</h5>
-                            <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis egestas sem.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ##### Services Area End ###### -->
+</section>
+<!-- ##### Fraud Report Form Area End ###### -->
 
     <!-- ##### Newsletter Area Start ###### -->
     <section class="newsletter-area section-padding-100 bg-img jarallax" style="background-image: url(img/bg-img/6.jpg);">
@@ -497,7 +311,7 @@
 
                             <!-- Copywrite Text -->
                             <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  Copyright <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                         </div>
                     </div>
@@ -528,6 +342,7 @@
     <script src="lang/de.js"></script>
     <script src="lang/en.js"></script>
     <script src="app.js"></script>
+    <script src="../js/demo/demo.js"></script>
 </body>
 
 </html>

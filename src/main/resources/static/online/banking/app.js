@@ -105,6 +105,34 @@ $(document).ready(function() {
 
   });
 
+    // Start single Process Instance
+    $('#triggerStartDispute').click(function() {
+      var dispute = {
+        "accountNumber": $('#accountNumber').val(),
+        "transactionId": $('#transactionId').val(),
+        "reportDetails": $("#reportDetails").text(),
+        "corporation": "Camunbankia"
+      };
+  
+      var data = JSON.stringify(dispute);
+  
+      console.log(data);
+  
+      $.ajax({
+        type: 'POST',
+        url: baseUrl + "/new-dispute/" + lang,
+        data: data,
+        contentType: 'application/json; charset=utf-8',
+        success: function(result) {
+          $('#applicationId').text(result);
+          $('#applicationReceived').toggle();
+          $('#fieldsetForm').toggle();
+        },
+        crossDomain: true,
+      });
+  
+    });
+
   // correlate message for Antrag
   $('#triggerUploadDocuments').click(function() {
     debugger;

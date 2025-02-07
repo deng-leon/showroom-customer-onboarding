@@ -13,6 +13,7 @@ var langEn = {
     "topbar-contact": "contact@camunda.com",
     "topbar-list": "Pages",
     "topbar-about": "About Us",
+    "topbar-dispute": "Dispute Form",
     "topbar-account": "Bank Accounts",
     "topbar-document": "Hand In Documents",
     "topbar-contact": "Contact",

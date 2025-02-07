@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.camunda.demo.customeronboarding.ProcessConstants;
 import com.camunda.demo.customeronboarding.model.NewApplication;
+import com.camunda.demo.customeronboarding.model.NewDispute;
 
 import io.camunda.zeebe.spring.client.ZeebeClientLifecycle;
 
@@ -37,6 +38,22 @@ public class ApplicationOnlineFacade {
       .join();
 
     return application.getApplicationNumber();
+  }
+
+  @PostMapping(path="/new-dispute/{lang}", produces=MediaType.TEXT_HTML_VALUE, consumes=MediaType.APPLICATION_JSON_VALUE)
+  public String submitNewDispute(@RequestBody NewDispute dispute, @RequestHeader("referer") String referer, @PathVariable("lang") String lang) {
+    String uiBaseUrl = referer.substring(0, referer.lastIndexOf('/')) + "/";
+    dispute.setUiBaseUrl(uiBaseUrl);
+
+    client
+      .newCreateInstanceCommand()
+      .bpmnProcessId(ProcessConstants.PROCESS_KEY_DISPUTE)
+      .latestVersion()
+      .variables(dispute)
+      .send()
+      .join();
+
+    return dispute.getDisputeNumber();
   }
 
   
