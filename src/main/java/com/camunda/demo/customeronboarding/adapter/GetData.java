@@ -13,10 +13,10 @@ public class GetData {
     public Map<String, Object> calculateScore() {
         // Create a map with the variables you want to return
         Map<String, Object> variables = new HashMap<>();
-        variables.put("customer_name", "mr X");
-        variables.put("geolocation_payment", "Las Vegas");
+        variables.put("customerName", "mr X");
+        variables.put("geolocationPayment", "Las Vegas");
         variables.put("amount", 100);
-        variables.put("transaction_type", "transfer");
+        variables.put("transactionType", "transfer");
 
         return variables; // Return the map with the new variables
     }
