@@ -45,4 +45,8 @@ public class NewDispute {
     public String getAccountNumber() {
         return accountNumber;
     }
+
+    public String getDetails() {
+        return reportDetails;
+    }
 }
