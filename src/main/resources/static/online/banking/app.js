@@ -110,7 +110,7 @@ $(document).ready(function() {
       var dispute = {
         "accountNumber": $('#accountNumber').val(),
         "transactionId": $('#transactionId').val(),
-        "reportDetails": $("#reportDetails").text(),
+        "reportDetails": $("#reportDetails").val(),
         "corporation": "Camunbankia"
       };
   
