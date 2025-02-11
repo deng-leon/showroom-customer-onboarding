@@ -46,7 +46,7 @@ public class NewDispute {
         return accountNumber;
     }
 
-    public String getDetails() {
+    public String getReportDetails() {
         return reportDetails;
     }
 }
