@@ -49,4 +49,8 @@ public class NewDispute {
     public String getReportDetails() {
         return reportDetails;
     }
+
+    public String getTransactionId() {
+        return transactionId;
+    }
 }
