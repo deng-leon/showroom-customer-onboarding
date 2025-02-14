@@ -15,6 +15,10 @@ public class NewDispute {
     private String merchantName;
     private String eMail;
     
+    public String geteMail() {
+        return eMail;
+    }
+
     public String getTransactionDate() {
         return transactionDate;
     }
