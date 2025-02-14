@@ -9,7 +9,28 @@ public class NewDispute {
     private String accountNumber;
     private String transactionId;
     private String reportDetails;
+    private String transactionDate;
+    private String transactionAmount;
+    private String cardholderName;
+    private String merchantName;
+    private String eMail;
     
+    public String getTransactionDate() {
+        return transactionDate;
+    }
+
+    public String getTransactionAmount() {
+        return transactionAmount;
+    }
+
+    public String getCardholderName() {
+        return cardholderName;
+    }
+
+    public String getMerchantName() {
+        return merchantName;
+    }
+
     private String uiBaseUrl;
 
     public static int counter = 0;

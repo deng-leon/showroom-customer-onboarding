@@ -111,6 +111,11 @@ $(document).ready(function() {
         "accountNumber": $('#accountNumber').val(),
         "transactionId": $('#transactionId').val(),
         "reportDetails": $("#reportDetails").val(),
+        "transactionDate": $("#transactionDate").val(),
+        "transactionAmount": $("#transactionAmount").val(),
+        "cardholderName": $("#cardholderName").val(),
+        "merchantName": $("#merchantName").val(),
+        "eMail": $("#eMail").val(),
         "corporation": "Camunbankia"
       };
   
